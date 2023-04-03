@@ -1,0 +1,7 @@
+name=PlayPunk-Template
+author=Scott King
+description=A template for playdate games developed by Scott King
+bundleID=com.organization.package
+version=0.0.1
+buildNumber=1
+imagePath=SystemAssets
