@@ -17,7 +17,7 @@ curGameState = GameState.menu
 -- Game Objects (created in main)
 
 -- Global Sounds (keep scene specific sounds out of here to save memory)
---clickSound = snd.sampleplayer.new("Audio/SFX/click.wav")
+clickSound = snd.sampleplayer.new("Audio/SFX/click.wav")
 
 -- Global Fonts (keep scene specific fonts out of here to save memory)
---defaultFont = gfx.font.new("Fonts/Roobert-24-Medium-Halved")
+defaultFont = gfx.font.new("Fonts/Roobert-24-Medium-Halved")

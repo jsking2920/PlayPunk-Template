@@ -11,7 +11,7 @@ local showingCrankIndicator = false
 local function LoadGame()
 	playdate.display.setRefreshRate(50) -- sets framerate to 50 fps
 	math.randomseed(pd.getSecondsSinceEpoch()) -- sets seed for math.random so that it's actually random
-	--gfx.setFont(defaultFont) -- sets default font to use if one isn't specified later
+	gfx.setFont(defaultFont) -- sets default font to use if one isn't specified later
 	gfx.setBackgroundColor(gfx.kColorBlack) -- default "clear flag" color
 
 	curGameState = GameState.menu
