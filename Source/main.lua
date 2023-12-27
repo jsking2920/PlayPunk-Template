@@ -5,8 +5,6 @@ import "CoreLibs/timer"
 import "Globals"
 --------------------------------------------------------------------------------
 
-local showingCrankIndicator = false
-
 -- Initializes game and sets some parameters
 local function LoadGame()
 	playdate.display.setRefreshRate(50) -- sets framerate to 50 fps
@@ -48,15 +46,7 @@ function pd.update()
 		DrawDebug()
 	end
 
-	-- Crank indicator calls have to be done here, not in other classes; see: https://devforum.play.date/t/can-crankindicator-update-be-called-in-a-class/6301/8
 	if (shouldShowCrankIndicator) then
-		if (showingCrankIndicator) then
-			pd.ui.crankIndicator:update()
-		else
-			pd.ui.crankIndicator:start()
-			showingCrankIndicator = true
-		end
-	else
-		showingCrankIndicator = false
+		pd.ui.crankIndicator:draw()
 	end
 end
